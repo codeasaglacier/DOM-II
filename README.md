@@ -15,13 +15,9 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 
 **Follow these steps for completing your project.**
 
-* [] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+* [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 * [ ] Add your project manager as a reviewer on the pull-request
-* [ ] Your project manager will count the project as complete by merging the branch back into master.
-
-## Task 1: Set Up LESS Preprocessor
-
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [ ] Your project manager will l a version message back, reach out to your project manager for help.
 
 * [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
 
