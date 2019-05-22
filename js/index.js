@@ -15,7 +15,7 @@ mouseoverPurple.forEach(element => {
     })
 });
 
-const introMouseEnter = document.querySelectorAll('.intro, .text-content, .content-destination, .destination');
+const introMouseEnter = document.querySelectorAll('.intro, .text-content, .content-destination');
 introMouseEnter.forEach(element => {
     element.addEventListener('mouseenter', event => {
         event.target.style.color = "green"
@@ -23,7 +23,7 @@ introMouseEnter.forEach(element => {
     })
 });
 
-const introMouseOut = document.querySelectorAll('.intro, .text-content, .content-destination, .destination');
+const introMouseOut = document.querySelectorAll('.intro, .text-content, .content-destination');
 introMouseOut.forEach(element => {
     element.addEventListener('mouseleave', event => {
         event.target.style.color = "purple";
@@ -31,7 +31,7 @@ introMouseOut.forEach(element => {
     })
 });
 
-const footerMouseEnter = document.querySelectorAll('.footer p');
+const footerMouseEnter = document.querySelectorAll('.footer p, .destination');
 footerMouseEnter.forEach(element => {
     element.addEventListener('mouseenter', event => {
         event.target.style.color = "green"
@@ -39,7 +39,7 @@ footerMouseEnter.forEach(element => {
     })
 });
 
-const footerMouseOut = document.querySelectorAll('.footer p');
+const footerMouseOut = document.querySelectorAll('.footer p, .destination');
 footerMouseOut.forEach(element => {
     element.addEventListener('mouseleave', event => {
         event.target.style.color = "purple";
