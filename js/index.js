@@ -1,7 +1,7 @@
 // Your code goes here
-const mouseoverDark = document.querySelectorAll('body, .nav-container');
+const mouseoverDark = document.querySelectorAll('.nav-container, body,  .footer');
 mouseoverDark.forEach(element => {
-    addEventListener('mouseover', event => {
+    element.addEventListener('mouseover', event => {
         event.target.style.backgroundColor = "black";
     })
 })
@@ -15,14 +15,15 @@ mouseoverPurple.forEach(element => {
     })
 });
 
-const introMouseEnter = document.querySelectorAll('.intro');
+const introMouseEnter = document.querySelectorAll('.intro, .text-content, .content-destination, .destination');
 introMouseEnter.forEach(element => {
     element.addEventListener('mouseenter', event => {
         event.target.style.color = "green"
+        console.log(event);
     })
 });
 
-const introMouseOut = document.querySelectorAll('.intro');
+const introMouseOut = document.querySelectorAll('.intro, .text-content, .content-destination, .destination');
 introMouseOut.forEach(element => {
     element.addEventListener('mouseleave', event => {
         event.target.style.color = "purple";
@@ -30,21 +31,21 @@ introMouseOut.forEach(element => {
     })
 });
 
-const textMouseEnter = document.querySelectorAll('.text-content, .content-destination, .destination');
-textMouseEnter.forEach(element => {
+const footerMouseEnter = document.querySelectorAll('.footer p');
+footerMouseEnter.forEach(element => {
     element.addEventListener('mouseenter', event => {
         event.target.style.color = "green"
+        console.log(event);
     })
 });
 
-const textMouseOut = document.querySelectorAll('.text-content, .content-destination, .destination');
-textMouseOut.forEach(element => {
+const footerMouseOut = document.querySelectorAll('.footer p');
+footerMouseOut.forEach(element => {
     element.addEventListener('mouseleave', event => {
         event.target.style.color = "purple";
         setTimeout(() => event.target.style.color = "", 2000)
     })
 });
-
 
 
 const btnClick = document.querySelectorAll('div .btn');
