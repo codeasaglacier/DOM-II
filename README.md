@@ -17,7 +17,7 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 
 * [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 * [x] Add your project manager as a reviewer on the pull-request
-* [ ] Your project manager will l a version message back, reach out to your project manager for help.
+* [x] Your project manager will l a version message back, reach out to your project manager for help.
 
 * [x] Open your terminal and navigate to your preprocessing project by using the `cd` command
 
