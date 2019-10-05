@@ -9,9 +9,10 @@ peekABoo.forEach(element => {
 
 const respect = document.querySelector("body")
 respect.addEventListener("keydown", event => {
-    if(event.keyCode = 102){
+    if(event.keyCode === 70){
         alert("Respect")
     }
+    // console.log(event.keyCode)
 })
 
 const redWheel = document.querySelector("body")
@@ -21,8 +22,12 @@ redWheel.addEventListener("wheel", event => {
 })
 
 
-
-
+const btnClick = document.querySelectorAll('.btn')
+btnClick.forEach(element => {
+    element.addEventListener("dblclick", event => {
+        alert("DOUBLE CLICK!!!"+event.target)
+    })
+})
 
 
 
