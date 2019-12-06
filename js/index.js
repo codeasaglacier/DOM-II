@@ -1,39 +1,45 @@
 // Your code goes here
 const peekABoo = document.querySelectorAll("img")
-peekABoo.forEach(element => {
-    element.addEventListener("mouseover", event => {
-        event.target.style.display = "none"
-        setTimeout(() => event.target.style.display = "", 500)
+    peekABoo.forEach(element => {
+        element.addEventListener("mouseover", event => {
+         event.target.style.display = "none"
+         setTimeout(() => event.target.style.display = "", 500)
     })
 })
 
 const respect = document.querySelector("body")
-respect.addEventListener("keydown", event => {
-    if(event.keyCode === 70){
+    respect.addEventListener("keydown", event => {
+     if(event.keyCode === 70){
         alert("Respect")
     }
-    // console.log(event.keyCode)
 })
 
 const redWheel = document.querySelector("body")
-redWheel.addEventListener("wheel", event => {
-    event.target.style.backgroundColor = "red"
-    setTimeout(() => event.target.style.backgroundColor = "", 500)
+    redWheel.addEventListener("wheel", event => {
+        event.target.style.backgroundColor = "red"
+        setTimeout(() => event.target.style.backgroundColor = "", 500)
 })
 
-
 const btnClick = document.querySelectorAll('.btn')
-btnClick.forEach(element => {
-    element.addEventListener("dblclick", event => {
-        alert("DOUBLE CLICK!!!"+event.target)
+    btnClick.forEach(element => {
+        element.addEventListener("dblclick", event => {
+         alert("DOUBLE CLICK!!!"+event.target)
     })
 })
 
+window.addEventListener('scroll', () => {
+    const navScroll = document.querySelector('header')
+        navScroll.style.backgroundColor = 'green'
+        setTimeout(() => navScroll.style.backgroundColor = "", 500)
+})
 
+window.addEventListener('resize', () => {
+    alert('Dude, the walls are moving!')
+})
 
+const copy = document.querySelector('body')
 
-
-
+const click = document.querySelectorAll('.btn')
 
 
 
