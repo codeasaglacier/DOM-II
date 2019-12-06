@@ -41,7 +41,10 @@ const copy = document.querySelector('body')
 
 const click = document.querySelectorAll('.btn')
 
+const rightClick = document.querySelector('body')
+//contextmenu
 
+const select = document.querySelector('.container home')
 
 
 
