@@ -20,12 +20,10 @@ const redWheel = document.querySelector("body")
         setTimeout(() => event.target.style.backgroundColor = "", 500)
 })
 
-const btnClick = document.querySelectorAll('.btn')
-    btnClick.forEach(element => {
-        element.addEventListener("dblclick", event => {
-         alert("DOUBLE CLICK!!!"+event.target)
+const dblClick = document.querySelector('.logo-heading')
+    dblClick.addEventListener("dblclick", event => {
+         alert("DOUBLE CLICKED!!!")
     })
-})
 
 window.addEventListener('scroll', () => {
     const navScroll = document.querySelector('header')
@@ -34,17 +32,37 @@ window.addEventListener('scroll', () => {
 })
 
 window.addEventListener('resize', () => {
-    alert('Dude, the walls are moving!')
+    alert('Dude, the walls are moving.')
 })
 
-const copy = document.querySelector('body')
+const copy = document.querySelector('.footer')
+    copy.addEventListener('copy', () => {
+        alert("Sure, just change it enough so it doesn't look the same")
+    })
 
 const click = document.querySelectorAll('.btn')
+    click.forEach(element => {
+        element.addEventListener('click', () => {
+            alert('Click button to confirm button click')
+        })
+    })
 
-const rightClick = document.querySelector('body')
-//contextmenu
+const rightClick = document.querySelector('.main-navigation')
+    rightClick.addEventListener('contextmenu', event => {
+        alert('What do you think you are, a Developer?')
+        event.preventDefault()
+    })
 
-const select = document.querySelector('.container home')
+const rightClick2 = document.querySelector('.home')
+    rightClick2.addEventListener('contextmenu', event => {
+        alert('What do you think you are, a Developer?')
+        event.preventDefault()
+    })
+
+const select = document.querySelector('.footer')
+    select.addEventListener('select', () => {
+        alert('Dude, can I copy off you?')
+    })
 
 
 
