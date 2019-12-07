@@ -35,7 +35,6 @@ window.addEventListener('resize', () => {
     alert('Dude, the walls are moving.')
 })
 
-
 const click = document.querySelectorAll('.btn')
     click.forEach(element => {
         element.addEventListener('click', () => {
