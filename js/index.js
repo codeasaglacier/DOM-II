@@ -35,10 +35,6 @@ window.addEventListener('resize', () => {
     alert('Dude, the walls are moving.')
 })
 
-const copy = document.querySelector('.footer')
-    copy.addEventListener('copy', () => {
-        alert("Sure, just change it enough so it doesn't look the same")
-    })
 
 const click = document.querySelectorAll('.btn')
     click.forEach(element => {
@@ -63,8 +59,16 @@ const select = document.querySelector('.footer')
     select.addEventListener('select', () => {
         alert('Dude, can I copy off you?')
     })
+    
+const copy = document.querySelector('.footer')
+copy.addEventListener('copy', () => {
+    alert("Sure, just change it enough so it doesn't look the same")
+})
 
-
+const dontGoNowhere = document.querySelectorAll('a')
+    dontGoNowhere.forEach(element => {
+        element.preventDefault()
+    })
 
 
 
